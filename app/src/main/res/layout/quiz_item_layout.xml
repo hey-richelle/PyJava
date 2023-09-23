@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <TextView
+        android:id="@+id/et_question"
+        android:layout_width="match_parent"
+        app:fontFamily="@font/century_gothic"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:layout_marginStart="10dp"
+        android:clickable="false"
+        android:hint="Enter Question Text" />
+
+    <TextView
+        android:layout_marginStart="10dp"
+        android:id="@+id/Answer"
+        android:layout_below="@+id/et_question"
+        app:fontFamily="@font/century_gothic"
+        android:layout_width="match_parent"
+        android:textSize="15dp"
+        android:layout_height="wrap_content"
+        android:hint="Answer: "/>
+
+
+    <!-- EditText for Option 1 -->
+    <TextView
+        android:layout_marginStart="10dp"
+        android:id="@+id/et_option1"
+        android:clickable="false"
+        app:fontFamily="@font/century_gothic"
+        android:textSize="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Answer"
+        android:hint="Option 1" />
+
+    <!-- EditText for Option 2 -->
+    <TextView
+        android:layout_marginStart="10dp"
+        android:id="@+id/et_option2"
+        android:clickable="false"
+        android:textSize="15dp"
+        app:fontFamily="@font/century_gothic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_option1"
+        android:hint="Option 2" />
+
+    <!-- EditText for Option 3 -->
+    <TextView
+        android:layout_marginStart="10dp"
+        android:id="@+id/et_option3"
+        android:textSize="15dp"
+        app:fontFamily="@font/century_gothic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_option2"
+        android:clickable="false"
+        android:hint="Option 3" />
+
+
+    <!-- RadioGroup for Options (without radio buttons) -->
+    <RadioGroup
+        android:id="@+id/options_radio_group"
+        android:layout_width="match_parent"
+        app:fontFamily="@font/century_gothic"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_option3"
+        android:layout_marginStart="15dp"
+        android:paddingBottom="4dp"
+        android:orientation="vertical"
+        android:visibility="gone"> <!-- Set visibility to gone to hide the radio buttons -->
+
+        <!-- Option 1 RadioButton (not visible) -->
+        <RadioButton
+            android:id="@+id/option1_radio_button"
+            android:layout_width="match_parent"
+            app:fontFamily="@font/century_gothic"
+            android:layout_height="wrap_content"
+            android:text="Option 1"
+            android:textSize="16sp"
+            android:visibility="gone" />
+
+        <!-- Option 2 RadioButton (not visible) -->
+        <RadioButton
+            android:id="@+id/option2_radio_button"
+            android:layout_width="match_parent"
+            app:fontFamily="@font/century_gothic"
+            android:layout_height="wrap_content"
+            android:text="Option 2"
+            android:textSize="16sp"
+            android:visibility="gone" />
+
+        <!-- Option 3 RadioButton (not visible) -->
+        <RadioButton
+            android:id="@+id/option3_radio_button"
+            android:layout_width="match_parent"
+            app:fontFamily="@font/century_gothic"
+            android:layout_height="wrap_content"
+            android:text="Option 3"
+            android:textSize="16sp"
+            android:visibility="gone" />
+    </RadioGroup>
+
+    <!-- Separator Line -->
+    <View
+        android:id="@+id/separatorLine"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/options_radio_group"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/black" />
+</RelativeLayout>

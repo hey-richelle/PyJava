@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#D6B4FC"
+    android:layout_height="match_parent"
+    tools:context=".admin_create">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <androidx.cardview.widget.CardView
+        android:layout_width="325dp"
+        app:cardElevation="10dp"
+        app:cardCornerRadius="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="20dp"
+        android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/gradient_background7"
+        android:gravity="center"
+        android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center"
+        app:srcCompat="@drawable/logo_java" />
+    <TextView
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        app:fontFamily="@font/century_gothic"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:text="PyJava Admin Create"
+        android:layout_width="wrap_content"/>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_marginTop="20dp"
+        app:fontFamily="@font/century_gothic"
+        android:layout_width="280dp"
+        android:textColorHint="@color/black"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            app:fontFamily="@font/century_gothic"
+            android:background="@android:color/transparent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:textStyle="bold" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="280dp"
+        android:layout_marginTop="20dp"
+        app:fontFamily="@font/century_gothic"
+        app:passwordToggleEnabled="true"
+        android:textColorHint="@color/black"
+        app:passwordToggleTint="@color/black"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            app:fontFamily="@font/century_gothic"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:inputType="textPassword"
+            android:hint="Password"
+            android:textStyle="bold" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="280dp"
+        android:layout_marginBottom="20dp"
+        app:fontFamily="@font/century_gothic"
+        android:textColorHint="@color/black"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/Phone"
+            android:layout_width="match_parent"
+            app:fontFamily="@font/century_gothic"
+            android:background="@android:color/transparent"
+            android:layout_height="wrap_content"
+            android:hint="Phone Number: "
+            android:inputType="phone"
+            android:textStyle="bold" />
+    </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/registered"
+        android:layout_marginTop="10dp"
+        android:layout_width="280dp"
+        app:fontFamily="@font/century_gothic"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:background="@drawable/gradient_background9"
+        android:textColor="@color/black"
+        android:layout_height="wrap_content"
+        android:text="Click to Register"/>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>
+

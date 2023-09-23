@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:title="Home" />
+    <item
+        android:id="@+id/quiz"
+        android:icon="@drawable/ic_baseline_question_answer_24"
+        android:title="Create Quiz" />
+
+
+
+    <item
+        android:id="@+id/picture"
+        android:icon="@drawable/ic_baseline_drive_file_move_24"
+        android:title="Manage quiz"/>
+
+
+    <item
+        android:id="@+id/progress23"
+        android:icon="@drawable/ic_baseline_bar_chart_24"
+        android:title="User Progress"/>
+
+</menu>

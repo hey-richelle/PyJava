@@ -1,0 +1,31 @@
+<!-- res/layout/quiz_item_layout.xml -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/et_question"
+        android:layout_width="match_parent"
+        android:fontFamily="@font/century_gothic"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:text="Question Text" />
+
+    <TextView
+        android:id="@+id/Answer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/century_gothic"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:text="Answer: Correct Answer" />
+    <View
+        android:id="@+id/separatorLine"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/black" />
+</LinearLayout>

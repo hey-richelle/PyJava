@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#D6B4FC"
+    android:layout_gravity="center"
+    android:layout_height="match_parent"
+    tools:context=".admin_update">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="PyJava Admin Update"
+        android:textColor="@color/black"
+        app:fontFamily="@font/century_gothic"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/update_img"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        app:srcCompat="@drawable/logo_java" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="280dp"
+        app:fontFamily="@font/century_gothic"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:fontFamily="@font/century_gothic"
+            android:inputType="textEmailAddress"
+            android:hint="Email"
+            android:textStyle="bold"
+            android:focusable="false"
+            android:clickable="false" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="280dp"
+        android:layout_marginTop="20dp"
+        app:fontFamily="@font/century_gothic"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/Phone"
+            android:layout_width="match_parent"
+            app:fontFamily="@font/century_gothic"
+            android:layout_height="wrap_content"
+            android:hint="Phone Number: "
+            android:inputType="phone"
+            android:textStyle="bold" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="280dp"
+        android:layout_marginTop="20dp"
+        app:fontFamily="@font/century_gothic"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/fullname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:fontFamily="@font/century_gothic"
+            android:hint="Full Name or Nickname"
+            android:textStyle="bold" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <Button
+        android:id="@+id/update"
+        android:layout_marginTop="20dp"
+        android:layout_width="280dp"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        app:fontFamily="@font/century_gothic"
+        android:background="@drawable/oblong_button"
+        android:textColor="@color/white"
+        android:layout_height="wrap_content"
+        android:text="Click to update"/>
+
+
+    <Button
+        android:id="@+id/back"
+        android:layout_marginTop="20dp"
+        android:layout_width="280dp"
+        android:textStyle="bold"
+        app:fontFamily="@font/century_gothic"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:background="@drawable/oblong_button"
+        android:layout_height="wrap_content"
+        android:text="Back to Admin page"/>
+</LinearLayout>

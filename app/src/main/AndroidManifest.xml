@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.sys.system">
+
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.System"
+        tools:targetApi="31">
+        <activity
+            android:name=".Update_hard_python"
+            android:exported="false" />
+        <activity
+            android:name=".Update_hard_fill"
+            android:exported="false" />
+        <activity
+            android:name=".fill_and_the_blanks_python_hard"
+            android:exported="false" />
+        <activity
+            android:name=".Java_hard_setup"
+            android:exported="false" />
+        <activity
+            android:name=".Admin_ui"
+            android:exported="false" />
+        <activity
+            android:name=".CommentActivity2"
+            android:exported="false" />
+        <activity
+            android:name=".announce_view2"
+            android:exported="false" />
+        <activity
+            android:name=".CommentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".announce_view"
+            android:exported="false" />
+        <activity
+            android:name=".announce"
+            android:exported="false" />
+        <activity
+            android:name=".System_analysis2"
+            android:exported="false" />
+        <activity
+            android:name=".score_view2"
+            android:exported="false" />
+        <activity
+            android:name=".System_analysis"
+            android:exported="false" />
+        <activity
+            android:name=".python_hard_2"
+            android:exported="false" />
+        <activity
+            android:name=".python_hard_score1"
+            android:exported="false" />
+        <activity
+            android:name=".Python_quiz3"
+            android:exported="false" />
+        <activity
+            android:name=".python_normal_score2"
+            android:exported="false" />
+        <activity
+            android:name=".python_normal_score1"
+            android:exported="false" />
+        <activity
+            android:name=".Python_quiz2"
+            android:exported="false" />
+        <activity
+            android:name=".python_easy_score2"
+            android:exported="false" />
+        <activity
+            android:name=".python_easy_score1"
+            android:exported="false" />
+        <activity
+            android:name=".Python_quiz1"
+            android:exported="false" />
+        <activity
+            android:name=".easy3"
+            android:exported="false" />
+        <activity
+            android:name=".deleting_quiz2"
+            android:exported="false" />
+        <activity
+            android:name=".Python_hard1"
+            android:exported="false" />
+        <activity
+            android:name=".Hard_pythons_set"
+            android:exported="false" />
+        <activity
+            android:name=".Python_hard23"
+            android:exported="false" />
+        <activity
+            android:name=".Python_normal1"
+            android:exported="false" />
+        <activity
+            android:name=".Normal_pyhon"
+            android:exported="false" />
+        <activity
+            android:name=".Normal_pythons_set"
+            android:exported="false" />
+        <activity
+            android:name=".Python_easy1"
+            android:exported="false" />
+        <activity
+            android:name=".Easy_python_sets"
+            android:exported="false" />
+        <activity
+            android:name=".Easy_python"
+            android:exported="false" />
+        <activity
+            android:name=".python_sets"
+            android:exported="false" />
+        <activity
+            android:name=".User_progress"
+            android:exported="false" />
+        <activity
+            android:name=".Quiz_manager"
+            android:exported="false" />
+        <activity
+            android:name=".quiz_c_scores2"
+            android:exported="false" />
+        <activity
+            android:name=".quiz_c_scores"
+            android:exported="false" />
+        <activity
+            android:name=".quiz_b_scores2"
+            android:exported="false" />
+        <activity
+            android:name=".quiz_b_scores"
+            android:exported="false" />
+        <activity
+            android:name=".set_A_scores"
+            android:exported="false" />
+        <activity
+            android:name=".set_A_end"
+            android:exported="false" />
+        <activity
+            android:name=".QuizC"
+            android:exported="false" />
+        <activity
+            android:name=".QuizB"
+            android:exported="false" />
+        <activity
+            android:name=".Quiz_A"
+            android:exported="false" />
+        <activity
+            android:name=".Quiz_set_A"
+            android:exported="false" />
+        <activity
+            android:name=".Update_set_c"
+            android:exported="false" />
+        <activity
+            android:name=".Java_setc_setUp"
+            android:exported="false" />
+        <activity
+            android:name=".java_setc"
+            android:exported="false" />
+        <activity
+            android:name=".Update_set_b"
+            android:exported="false" />
+        <activity
+            android:name=".Java_setb_setUp"
+            android:exported="false" />
+        <activity
+            android:name=".java_set_b"
+            android:exported="false" />
+        <activity
+            android:name=".Java_sets"
+            android:exported="false" />
+        <activity
+            android:name=".Edit_java"
+            android:exported="false" />
+        <activity
+            android:name=".Easy_edit"
+            android:exported="false" />
+        <activity
+            android:name=".Reference2"
+            android:exported="false" />
+        <activity
+            android:name=".reference"
+            android:exported="false" />
+        <activity
+            android:name=".quiz_content2"
+            android:exported="false" />
+        <activity
+            android:name=".quiz_category"
+            android:exported="false" />
+        <activity
+            android:name=".quiz_content"
+            android:exported="false" />
+        <activity
+            android:name=".archive2"
+            android:exported="false" />
+        <activity
+            android:name=".Privacy"
+            android:exported="false" />
+        <activity
+            android:name=".Student_dashboard"
+            android:exported="false" />
+        <activity
+            android:name=".Archive_quiz"
+            android:exported="false" />
+        <activity
+            android:name=".private_chat2"
+            android:exported="false" />
+        <activity
+            android:name=".chat_view2"
+            android:exported="false" />
+        <activity
+            android:name=".private_chat"
+            android:exported="false" />
+        <activity
+            android:name=".chat_view"
+            android:exported="false" />
+        <activity
+            android:name=".modules"
+            android:exported="false" />
+        <activity
+            android:name=".python_hard_mode"
+            android:exported="false" />
+        <activity
+            android:name=".python_end"
+            android:exported="false" />
+        <activity
+            android:name=".python_hard"
+            android:exported="false" />
+        <activity
+            android:name=".category"
+            android:exported="false" />
+        <activity
+            android:name=".java_python"
+            android:exported="false" />
+        <activity
+            android:name=".hardmode2"
+            android:exported="false" />
+        <activity
+            android:name=".text"
+            android:exported="false" />
+        <activity
+            android:name=".deleting_quiz"
+            android:exported="false" />
+        <activity
+            android:name=".python"
+            android:exported="false" />
+        <activity
+            android:name=".java"
+            android:exported="false" />
+        <activity
+            android:name=".score_view"
+            android:exported="false" />
+        <activity
+            android:name=".deletequiz"
+            android:exported="false" />
+        <activity
+            android:name=".picturegame"
+            android:exported="false" />
+        <activity
+            android:name=".hard_set"
+            android:exported="false" />
+        <activity
+            android:name=".set_normal"
+            android:exported="false" />
+        <activity
+            android:name=".Easy_set"
+            android:exported="false" />
+        <activity
+            android:name=".create_quiz"
+            android:exported="false" />
+        <activity
+            android:name=".admin_update"
+            android:exported="false" />
+        <activity
+            android:name=".admin_create"
+            android:exported="false" />
+        <activity
+            android:name=".python_module"
+            android:exported="false" />
+        <activity
+            android:name=".jav_module"
+            android:exported="false" />
+        <activity
+            android:name=".archive"
+            android:exported="false" />
+        <activity
+            android:name=".Admin_page"
+            android:exported="false" />
+        <activity
+            android:name=".score_chart"
+            android:exported="false" />
+        <activity
+            android:name=".picture_score"
+            android:exported="false" />
+        <activity
+            android:name=".picture_end"
+            android:exported="false" />
+        <activity
+            android:name=".picture_quiz"
+            android:exported="false" />
+        <activity
+            android:name=".hard_mode_score"
+            android:exported="false" />
+        <activity
+            android:name=".hard_mode_end"
+            android:exported="false" />
+        <activity
+            android:name=".hard_mode"
+            android:exported="false" />
+        <activity
+            android:name=".normal_score"
+            android:exported="false" />
+        <activity
+            android:name=".normal_end"
+            android:exported="false" />
+        <activity
+            android:name=".normal_quiz"
+            android:exported="false" />
+        <activity
+            android:name=".easy_score"
+            android:exported="false" />
+        <activity
+            android:name=".easy_end"
+            android:exported="false" />
+        <activity
+            android:name=".easy"
+            android:exported="false" />
+        <activity
+            android:name=".easy2"
+            android:exported="false" />
+        <activity
+            android:name=".profile_update"
+            android:exported="false" />
+        <activity
+            android:name=".profile"
+            android:exported="false" />
+        <activity
+            android:name=".python_student"
+            android:exported="false" />
+        <activity
+            android:name=".student_java"
+            android:exported="false" />
+        <activity
+            android:name=".student_page"
+            android:exported="false" />
+        <activity
+            android:name=".signup"
+            android:exported="false" />
+        <activity
+            android:name=".login"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

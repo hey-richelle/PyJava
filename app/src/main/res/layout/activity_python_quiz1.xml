@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background4"
+    tools:context=".Python_quiz1">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/outof"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            app:fontFamily="@font/century_gothic"
+            android:layout_alignParentStart="true"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/java_lottie"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="25dp"
+            android:elevation="5dp"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/python23" />
+        <TextView
+            android:id="@+id/score_view"
+            android:layout_below="@id/time_view2"
+            app:fontFamily="@font/century_gothic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/time_view2"
+            android:layout_width="wrap_content"
+            android:layout_below="@id/outof"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_centerHorizontal="true"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="10dp">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:gravity="center"
+                android:background="#AEC3AE"
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/time_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center_horizontal"
+                    android:text="time"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    app:fontFamily="@font/century_gothic" /> <!-- Justify text content to center horizontally -->
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/question_view2"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/time_view2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="10dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:background="#AEC3AE"
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/question_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginLeft="15dp"
+                    android:justificationMode="inter_word"
+                    android:layout_marginRight="10dp"
+                    android:text="Question"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    app:fontFamily="@font/century_gothic" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <RadioGroup
+            android:id="@+id/radio_group"
+            android:layout_marginTop="20dp"
+            app:fontFamily="@font/century_gothic"
+            android:layout_below="@id/question_view2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="question"
+            android:textColor="@color/black"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/radio_button1"
+                android:textColor="@color/black"
+                app:fontFamily="@font/century_gothic"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"/>
+
+            <RadioButton
+                android:id="@+id/radio_button2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:fontFamily="@font/century_gothic"
+                android:layout_marginLeft="20dp"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/radio_button3"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                app:fontFamily="@font/century_gothic"
+                android:layout_marginLeft="20dp"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"/>
+
+        </RadioGroup>
+
+
+        <Button
+            android:id="@+id/next_button"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/radio_group"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            app:fontFamily="@font/century_gothic"
+            android:layout_marginBottom="10dp"
+            android:elevation="10dp"
+            android:padding="5dp"
+            android:background="@drawable/oblong_button"
+            android:text="Next"
+            android:textColor="@color/white" />
+
+    </RelativeLayout>
+</androidx.core.widget.NestedScrollView>

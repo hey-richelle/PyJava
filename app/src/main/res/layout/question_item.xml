@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- question_item.xml -->
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Question -->
+    <TextView
+        android:id="@+id/questionTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Question: "
+        android:textSize="16sp"
+        android:textStyle="bold"/>
+
+    <!-- Selected Option (Set visibility to 'gone') -->
+    <TextView
+        android:id="@+id/selectedOptionTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Selected Option: "
+        android:textSize="14sp"
+        android:visibility="gone"/>
+
+    <!-- User ID (Set visibility to 'gone') -->
+    <TextView
+        android:id="@+id/userIdTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="User ID: "
+        android:textSize="14sp"
+        android:visibility="gone"/>
+</LinearLayout>

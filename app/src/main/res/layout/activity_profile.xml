@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".profile"
+    android:background="@drawable/gradient_background4"
+    android:orientation="vertical">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/bottom_navigation">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="30dp"/>
+
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@android:color/transparent"
+            android:text="User Profile"
+            app:fontFamily="@font/century_gothic"
+            android:textColor="@color/black"
+            android:layout_marginBottom="40dp"
+            android:textStyle="bold"
+            android:textSize="25dp" />
+
+        <ImageView
+            android:id="@+id/student_img"
+            android:layout_width="170dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/ic_baseline_person_24" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="50dp"
+            android:layout_margin="30dp"
+            android:layout_gravity="center">
+
+            <TextView
+                android:text="FULLNAME"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_baseline_person_24"
+                android:textStyle="bold"
+                app:fontFamily="@font/century_gothic"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:drawablePadding="10dp"/>
+
+            <TextView
+                android:id="@+id/fullname"
+                android:layout_width="wrap_content"
+                app:fontFamily="@font/century_gothic"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="51dp"
+                android:layout_marginTop="15dp"
+                android:background="@android:color/transparent"
+                android:textColor="@color/black"
+                android:textSize="22dp" />
+
+
+
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/black"
+                android:layout_marginTop="20dp"/>
+
+            <TextView
+                android:text="USERNAME"
+                app:fontFamily="@font/century_gothic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_baseline_email_24"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginTop="30dp"
+                android:textSize="18dp"
+                android:drawablePadding="10dp"/>
+
+            <TextView
+                android:id="@+id/username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="51dp"
+                app:fontFamily="@font/century_gothic"
+                android:layout_marginTop="15dp"
+                android:background="@android:color/transparent"
+                android:textColor="@color/black"
+                android:textSize="22dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/black"
+                android:layout_marginTop="20dp"/>
+
+            <TextView
+                android:text="EMAIL"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:fontFamily="@font/century_gothic"
+                android:drawableLeft="@drawable/ic_baseline_email_24"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginTop="30dp"
+                android:textSize="18dp"
+                android:drawablePadding="10dp"/>
+
+            <TextView
+                android:id="@+id/email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:fontFamily="@font/century_gothic"
+                android:textColor="@color/black"
+                android:layout_marginStart="51dp"
+                android:layout_marginTop="15dp"
+                android:background="@android:color/transparent"
+                android:textSize="22dp" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/black"
+                android:layout_marginTop="20dp"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn23"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fontFamily="@font/century_gothic"
+            android:layout_marginBottom="25dp"
+            android:background="@drawable/oblong_button"
+            android:text="Update profile"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:icon="@drawable/ic_baseline_person_24" />
+
+
+    </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottom_navigation"
+            style="@style/BottomNavigationTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/home_nav"
+            app:elevation="10dp"
+            app:itemIconTint="@android:color/black"
+            app:itemTextColor="@android:color/black"
+            app:labelVisibilityMode="labeled"
+            app:menu="@menu/bottom_menu2" />
+    </RelativeLayout>
+</RelativeLayout>

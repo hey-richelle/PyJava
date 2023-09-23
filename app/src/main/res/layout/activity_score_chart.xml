@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#606C5D"
+    android:layout_height="match_parent"
+    tools:context=".score_chart">
+
+
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/bottom_navigation">
+
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginBottom="20dp"
+            android:layout_height="match_parent">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/wala"
+                android:layout_width="300dp"
+                android:layout_height="150dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:background="@android:color/transparent"
+                android:padding="5dp"
+                app:cardCornerRadius="30dp"
+                app:cardElevation="10dp">
+               <RelativeLayout
+                   android:layout_width="300dp"
+                   android:background="#D6DBDF"
+                   android:layout_height="150dp">
+
+                   <TextView
+                       android:id="@+id/hi"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_marginLeft="25dp"
+                       android:layout_marginTop="30dp"
+                       android:text="Hi !"
+                       android:textColor="@color/black"
+                       android:textSize="15dp"
+                       android:textStyle="normal" />
+
+                   <TextView
+                       android:id="@+id/user_name"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_below="@+id/hi"
+                       android:layout_marginStart="40dp"
+                       android:layout_marginTop="10dp"
+                       android:text=""
+                       android:textColor="@color/black"
+                       android:textSize="15dp"
+                       android:textStyle="normal" />
+
+                   <TextView
+                       android:id="@+id/points"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_below="@+id/user_name"
+                       android:layout_centerHorizontal="true"
+                       android:layout_marginTop="20dp"
+                       android:text="My score = 0"
+                       android:textColor="#000000"
+                       android:textSize="15sp"
+                       android:textStyle="normal" />
+
+               </RelativeLayout>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginStart="200dp"
+                    android:layout_marginTop="15dp"
+                    android:clickable="true"
+                    app:cardCornerRadius="55dp">
+
+                    <LinearLayout
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:background="#F5EBEB"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/user_img"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:src="@drawable/ic_baseline_person_24" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:id="@+id/linear"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/wala"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="300dp"
+                android:layout_height="350dp"
+                android:layout_margin="10dp"
+                android:background="@android:color/transparent"
+                app:cardElevation="10dp"
+                android:outlineProvider="bounds"
+                android:padding="5dp">
+
+                <LinearLayout
+                    android:layout_width="300dp"
+                    android:background="#D6DBDF"
+                    android:layout_height="350dp">
+
+                    <com.github.mikephil.charting.charts.PieChart
+                        android:id="@+id/barChart"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+        </RelativeLayout>
+        </androidx.core.widget.NestedScrollView>
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:id="@+id/bottom_navigation"
+                style="@style/BottomNavigationTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:elevation="10dp"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/home_nav"
+                app:itemIconTint="@android:color/black"
+                app:itemTextColor="@android:color/black"
+                app:labelVisibilityMode="labeled"
+                app:menu="@menu/bottom_menu2" />
+        </RelativeLayout>
+</RelativeLayout>

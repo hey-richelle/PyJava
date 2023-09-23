@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#D6B4FC"
+    android:gravity="center"
+    tools:context=".hard_mode_score">
+
+    <TextView
+        android:id="@+id/user_id1"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="User ID: " />
+
+
+    <TextView
+        android:id="@+id/user_id"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="  " />
+
+    <TextView
+        android:id="@+id/score2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Java Hard mode quiz score is"
+        android:textColor="@color/black"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/score"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Score: " />
+
+    <TextView
+        android:id="@+id/total_questions"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Score: " />
+    <TextView
+        android:id="@+id/percentage"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Score: " />
+
+
+    <TextView
+        android:id="@+id/pass"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Score: " />
+
+    <Button
+        android:id="@+id/exits2"
+        android:layout_width="250dp"
+        android:layout_marginTop="20dp"
+        android:text="Exit"
+        android:textSize="25dp"
+        app:icon="@drawable/ic_baseline_exit_to_app_24"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:background="@drawable/oblong_button"
+        android:layout_height="60dp"/>
+</LinearLayout>

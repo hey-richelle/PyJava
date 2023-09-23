@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+
+        <item android:id="@+id/creation"
+            android:icon="@drawable/ic_baseline_person_24"
+            android:title="Create Admin"/>
+
+        <item android:id="@+id/update"
+            android:icon="@drawable/ic_baseline_person_24"
+            android:title="Update Admin profile"/>
+
+        <item android:id="@+id/archive"
+            android:icon="@drawable/ic_baseline_question_answer_24"
+            android:title="Archive quiz"/>
+
+        <item android:id="@+id/QuizItems"
+            android:icon="@drawable/ic_baseline_book_24"
+            android:title="Reference"/>
+
+
+
+
+    </group>
+
+    <item
+        android:title="Settings">
+        <menu>
+            <item android:id="@+id/logout"
+                android:icon="@drawable/ic_baseline_exit_to_app_24"
+                android:title="Logout"/>
+        </menu>
+    </item>
+
+
+
+
+</menu>

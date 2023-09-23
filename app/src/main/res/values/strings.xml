@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">PyJava</string>
+    <string name="open">Open Navigation Drawer</string>
+    <string name="close">Close Navigation Drawer</string>
+    <string name="data1">We collect minimal personal information necessary to provide you with our services. This may include your name, email address, and relevant account details. We will use this information solely for the purpose of enhancing your experience and delivering the services you\'ve requested. We do not share or sell your data to third parties for marketing purposes.</string>
+    <string name="data2">We employ industry-standard security measures to protect your data from unauthorized access, alteration, disclosure, or destruction. Our systems are regularly updated to ensure they meet the latest security standards. All data transmissions between your device and our servers are encrypted using SSL (Secure Socket Layer) technology.</string>
+    <string name="data3">We respect your control over your personal data. You have the right to access, update, or delete your information from our records. We obtain your explicit consent before collecting any sensitive data, and you can choose to opt out of non-essential data collection. However, please note that certain services may require specific data to function properly.</string>
+    <string name="data4">We may use third-party services that assist us in providing a better user experience. These services are carefully vetted to ensure they align with our privacy and security standards. However, we are not responsible for the practices employed by these external entities. We recommend reviewing their privacy policies as well.</string>
+    <string name="data5">We retain your personal data only for as long as necessary to fulfill the purposes outlined in this policy, or as required by applicable laws. After this period, your data will be securely deleted or anonymized.</string>
+    <string name="title_activity_normal_python">Normal_python</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+
+</resources>
