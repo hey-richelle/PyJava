@@ -21,6 +21,17 @@
             android:textSize="18sp"
             app:fontFamily="@font/century_gothic" />
 
+        <ImageButton
+            android:id="@+id/sound"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/java_lottie"
+            android:layout_marginTop="20dp"
+            android:background="@android:color/transparent"
+            android:layout_marginRight="30dp"
+            android:src="@drawable/speaker23"
+            android:layout_alignParentEnd="true"/>
+
         <com.airbnb.lottie.LottieAnimationView
             android:id="@+id/java_lottie"
             android:layout_width="50dp"
@@ -76,7 +87,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/time_view2"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="50dp"
+            android:layout_marginTop="60dp"
             app:cardCornerRadius="10dp"
             app:cardElevation="10dp">
             <LinearLayout

@@ -13,6 +13,7 @@ import android.graphics.drawable.ColorDrawable;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.os.CountDownTimer;
+import android.speech.tts.TextToSpeech;
 import android.text.Spannable;
 import android.text.SpannableString;
 import android.text.style.ForegroundColorSpan;
@@ -22,6 +23,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -37,6 +39,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
+import java.util.Locale;
 import java.util.Map;
 
 public class QuizB extends AppCompatActivity {
@@ -55,6 +58,8 @@ public class QuizB extends AppCompatActivity {
     private boolean isTimerRunning = false;
     private boolean isTimerPaused = false;
 
+    private TextToSpeech mTTS;
+    ImageButton speech;
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.side_logo, menu);
@@ -107,6 +112,25 @@ public class QuizB extends AppCompatActivity {
         mFillInTheBlank = findViewById(R.id.fill_in_the_blank);
         mTimeView = findViewById(R.id.time_view);
         mNextButton = findViewById(R.id.next_button);
+        speech = findViewById(R.id.sound);
+
+        mTTS = new TextToSpeech(this, new TextToSpeech.OnInitListener() {
+            @Override
+            public void onInit(int status) {
+                if (status == TextToSpeech.SUCCESS) {
+                    int result = mTTS.setLanguage(Locale.ENGLISH);
+
+                    if (result == TextToSpeech.LANG_MISSING_DATA || result == TextToSpeech.LANG_NOT_SUPPORTED) {
+                        Log.e("TTS", "Language not supported");
+                    } else {
+                        // Enable the button to speak the question
+                        speech.setEnabled(true);
+                    }
+                } else {
+                    Log.e("TTS", "Initialization failed");
+                }
+            }
+        });
 
         mDatabase = FirebaseDatabase.getInstance().getReference().child("Java_normal");
         mScoreRef = FirebaseDatabase.getInstance().getReference().child("Java_normal_score");
@@ -211,7 +235,25 @@ public class QuizB extends AppCompatActivity {
                 }
             }
         });
+
+        speech.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                speakQuestion();
+            }
+        });
     }
+    private void speakQuestion() {
+        String questionText = mQuestionView.getText().toString();
+        float pitch = 1.0f; // Adjust pitch as needed
+        float speed = 1.0f; // Adjust speed as needed
+
+        mTTS.setPitch(pitch);
+        mTTS.setSpeechRate(speed);
+
+        mTTS.speak(questionText, TextToSpeech.QUEUE_FLUSH, null);
+    }
+
 
     private void pushToWrongAnswers(String questionText, String selectedOption) {
         FirebaseUser currentUser = FirebaseAuth.getInstance().getCurrentUser();
