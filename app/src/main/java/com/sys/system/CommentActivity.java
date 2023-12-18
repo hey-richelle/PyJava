@@ -121,7 +121,6 @@ public class CommentActivity extends AppCompatActivity {
         commentsRecyclerView = findViewById(R.id.recycler);
 
         // Initialize Firebase references
-        commentsRef = FirebaseDatabase.getInstance().getReference("comments");
         studentsRef = FirebaseDatabase.getInstance().getReference("Student");
         adminRef = FirebaseDatabase.getInstance().getReference("ADMIN");
         currentUser = FirebaseAuth.getInstance().getCurrentUser();
@@ -139,7 +138,8 @@ public class CommentActivity extends AppCompatActivity {
         String date = intent.getStringExtra("date");
         String fullName = intent.getStringExtra("fullName");
         String imageUrl = intent.getStringExtra("imageUrl");
-
+        String announcementId = intent.getStringExtra("announcementId");
+        commentsRef = FirebaseDatabase.getInstance().getReference("comments").child(announcementId);
         // Display announcement details in the CommentActivity layout
         TextView titleTextView = findViewById(R.id.titleTextView);
         TextView contentTextView = findViewById(R.id.contentTextView);

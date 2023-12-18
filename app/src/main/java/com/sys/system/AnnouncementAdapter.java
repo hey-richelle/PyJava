@@ -31,8 +31,12 @@ import androidx.annotation.Nullable;
 
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.Query;
+import com.google.firebase.database.ValueEventListener;
 import com.squareup.picasso.Picasso;
 
 import java.util.List;
@@ -169,9 +173,24 @@ public class AnnouncementAdapter extends ArrayAdapter<Announcement> {
                                         }
                                     });
 
-                            // Delete the entire content of the "comments" database
+                            // Delete the associated comments
                             DatabaseReference commentReference = FirebaseDatabase.getInstance().getReference("comments");
-                            commentReference.removeValue();
+                            Query commentsQuery = commentReference.orderByChild("announcementId").equalTo(announcement.getId());
+
+                            commentsQuery.addListenerForSingleValueEvent(new ValueEventListener() {
+                                @Override
+                                public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                                    for (DataSnapshot snapshot : dataSnapshot.getChildren()) {
+                                        snapshot.getRef().removeValue();
+                                    }
+                                    Toast.makeText(getContext(), "Comments deleted successfully", Toast.LENGTH_SHORT).show();
+                                }
+
+                                @Override
+                                public void onCancelled(@NonNull DatabaseError databaseError) {
+                                    Toast.makeText(getContext(), "Failed to delete comments", Toast.LENGTH_SHORT).show();
+                                }
+                            });
                         }
                     });
 
@@ -193,6 +212,7 @@ public class AnnouncementAdapter extends ArrayAdapter<Announcement> {
                     // Create an Intent to open the CommentActivity
                     Intent intent = new Intent(getContext(), CommentActivity.class);
                     // Pass the announcement details as extras
+                    intent.putExtra("announcementId", announcement.getId()); // Pass the announcement ID
                     intent.putExtra("title", announcement.getTitle());
                     intent.putExtra("content", announcement.getContent());
                     intent.putExtra("time", announcement.getTime());

@@ -136,13 +136,13 @@ public class AnnouncementAdapter2 extends ArrayAdapter<Announcement> {
                     // Create an Intent to open the CommentActivity
                     Intent intent = new Intent(getContext(), CommentActivity2.class);
                     // Pass the announcement details as extras
+                    intent.putExtra("announcementId", announcement.getId()); // Pass the announcement ID
                     intent.putExtra("title", announcement.getTitle());
                     intent.putExtra("content", announcement.getContent());
                     intent.putExtra("time", announcement.getTime());
                     intent.putExtra("date", announcement.getDate());
                     intent.putExtra("fullName", announcement.getUploaderName());
                     intent.putExtra("imageUrl", announcement.getImageUrl());
-                    // Start the CommentActivity
                     getContext().startActivity(intent);
                     ((Activity)getContext()).overridePendingTransition(0, 0); // Disable animation
                     ((Activity) getContext()).finish();
