@@ -6,7 +6,7 @@
     android:background="@drawable/gradient_background4"
     android:layout_gravity="center"
     android:layout_height="match_parent"
-    tools:context=".python">
+    tools:context=".Activity.python">
 
 
 

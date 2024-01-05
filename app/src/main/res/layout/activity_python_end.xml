@@ -7,7 +7,7 @@
     android:orientation="vertical"
     android:background="#D6B4FC"
     android:gravity="center"
-    tools:context=".python_end">
+    tools:context=".Activity.python_end">
 
     <TextView
         android:id="@+id/user_id1"

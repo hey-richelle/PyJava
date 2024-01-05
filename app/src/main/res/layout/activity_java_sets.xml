@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/gradient_background4"
-    tools:context=".Java_sets">
+    tools:context=".Activity.Java_sets">
 
     <LinearLayout
         android:layout_width="match_parent"

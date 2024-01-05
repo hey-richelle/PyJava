@@ -8,7 +8,7 @@
     android:orientation="vertical"
     android:background="#606C5D"
     android:gravity="center"
-    tools:context=".deletequiz">
+    tools:context=".Activity.deletequiz">
 
 
     <TextView

@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/gradient_background4"
     android:layout_above="@+id/bottom_navigation"
-    tools:context=".Archive_quiz">
+    tools:context=".Activity.Archive_quiz">
 
 
     <androidx.recyclerview.widget.RecyclerView

@@ -7,7 +7,7 @@
     android:orientation="vertical"
     android:background="#D6B4FC"
     android:gravity="center"
-    tools:context=".python_easy_score2">
+    tools:context=".Activity.python_easy_score2">
 
     <TextView
         android:id="@+id/user_id1"

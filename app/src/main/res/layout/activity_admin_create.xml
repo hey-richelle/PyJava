@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:background="#D6B4FC"
     android:layout_height="match_parent"
-    tools:context=".admin_create">
+    tools:context=".Activity.admin_create">
 
     <LinearLayout
         android:orientation="vertical"

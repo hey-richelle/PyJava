@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/gradient_background6"
     android:orientation="vertical"
-    tools:context=".Admin_ui">
+    tools:context=".Activity.Admin_ui">
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">

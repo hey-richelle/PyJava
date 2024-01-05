@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/gradient_background4"
-    tools:context=".announce">
+    tools:context=".Activity.announce">
 
     <RelativeLayout
         android:layout_width="match_parent"

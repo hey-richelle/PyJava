@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:background="@drawable/gradient_background4"
     android:layout_height="match_parent"
-    tools:context=".private_chat2">
+    tools:context=".Activity.private_chat2">
 
     <!-- Chat messages RecyclerView -->
 

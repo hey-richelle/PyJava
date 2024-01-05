@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:id="@+id/drawer_layout"
     android:background="@drawable/gradient_background6"
-    tools:context=".Admin_page">
+    tools:context=".Activity.Admin_page">
 
 
     <RelativeLayout

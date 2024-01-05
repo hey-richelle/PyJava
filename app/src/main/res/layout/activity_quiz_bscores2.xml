@@ -7,7 +7,7 @@
     android:orientation="vertical"
     android:background="#D6B4FC"
     android:gravity="center"
-    tools:context=".quiz_b_scores2">
+    tools:context=".Activity.quiz_b_scores2">
 
     <TextView
         android:id="@+id/user_id1"
